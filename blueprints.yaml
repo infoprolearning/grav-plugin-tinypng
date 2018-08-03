@@ -1,0 +1,30 @@
+name: TinyPNG
+version: 1.0.0
+description: Image compression library using TinyPNG library
+icon: compress
+author:
+  name: Infopro Learning
+  email: techsupport@infoprolearning.com
+homepage: https://github.com/infoprolearning/grav-plugin-tinypng
+keywords: tinypng, plugin, compress, tinify
+bugs: https://github.com/infoprolearning/grav-plugin-tinypng/issues
+license: MIT
+
+form:
+  validation: strict
+  fields:
+    enabled:
+      type: toggle
+      label: Plugin status
+      highlight: 1
+      default: 0
+      options:
+        1: Enabled
+        0: Disabled
+      validate:
+        type: bool
+
+    license_key:
+      type: text
+      label: Licence Key
+      placeholder: "YOUR_TINYPNG_KEY"
